@@ -1,0 +1,250 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Style Guide</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background: #ffffff;
+        color: #17181f;
+        padding: 60px 80px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+      }
+
+      .tag {
+        display: inline-block;
+        background: #b9ff66;
+        color: #17181f;
+        font-weight: 700;
+        font-size: 22px;
+        padding: 6px 14px;
+        margin-bottom: 2px;
+      }
+
+      .tag.gray {
+        background: #f3f3f3;
+      }
+
+      .section-title {
+        margin-bottom: 40px;
+      }
+
+      .row {
+        display: block;
+        margin-bottom: 2px;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      p {
+        font-weight: 700;
+        display: inline;
+      }
+
+      .accent {
+        color: #b9ff66;
+        font-weight: 700;
+      }
+
+      .type-block .row {
+        margin-bottom: 28px;
+      }
+
+      h1.size {
+        font-size: 44px;
+      }
+      h2.size {
+        font-size: 32px;
+      }
+      h3.size {
+        font-size: 24px;
+      }
+      h4.size {
+        font-size: 16px;
+      }
+      p.size {
+        font-size: 14px;
+        font-weight: 400;
+      }
+
+      .label {
+        font-weight: 700;
+      }
+      h1 .label {
+        font-size: 32px;
+      }
+      h2 .label {
+        font-size: 22px;
+      }
+      h3 .label {
+        font-size: 16px;
+      }
+      h4 .label {
+        font-size: 12px;
+      }
+      p .label {
+        font-size: 12px;
+      }
+
+      .mobile-block {
+        margin-top: 70px;
+      }
+
+      .colors {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+      }
+
+      .swatch {
+        height: 190px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 26px;
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+
+      .swatch.lime {
+        background: #b9ff66;
+        color: #17181f;
+      }
+      .swatch.dark {
+        background: #191a23;
+        color: #ffffff;
+      }
+      .swatch.light {
+        background: #f3f3f3;
+        color: #17181f;
+      }
+
+      .credit-box {
+        background: #191a23;
+        color: #ffffff;
+        display: inline-block;
+        padding: 14px 20px;
+        margin-bottom: 20px;
+        font-size: 15px;
+      }
+
+      .credit-box a {
+        color: #ffffff;
+        text-decoration: underline;
+      }
+
+      .font-box {
+        margin-top: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <!-- COLUMN 1: TYPOGRAPHY -->
+      <div>
+        <div class="section-title">
+          <span class="tag">Typography</span><br />
+          <span class="tag gray">Desktop</span>
+        </div>
+
+        <div class="type-block">
+          <div class="row">
+            <h1 class="size"><span class="accent label">H1</span> Positivus</h1>
+          </div>
+          <div class="row">
+            <h2 class="size"><span class="accent label">H2</span> Positivus</h2>
+          </div>
+          <div class="row">
+            <h3 class="size"><span class="accent label">H3</span> Positivus</h3>
+          </div>
+          <div class="row">
+            <h4 class="size"><span class="accent label">H4</span> Positivus</h4>
+          </div>
+          <div class="row">
+            <p class="size"><span class="accent label">p</span> Positivus</p>
+          </div>
+        </div>
+
+        <div class="mobile-block">
+          <div class="section-title">
+            <span class="tag">Typography</span><br />
+            <span class="tag gray">Mobile</span>
+          </div>
+
+          <div class="type-block">
+            <div class="row">
+              <h1 class="size">
+                <span class="accent label">H1</span> Positivus
+              </h1>
+            </div>
+            <div class="row">
+              <h2 class="size">
+                <span class="accent label">H2</span> Positivus
+              </h2>
+            </div>
+            <div class="row">
+              <h3 class="size">
+                <span class="accent label">H3</span> Positivus
+              </h3>
+            </div>
+            <div class="row">
+              <h4 class="size">
+                <span class="accent label">H4</span> Positivus
+              </h4>
+            </div>
+            <div class="row">
+              <p class="size"><span class="accent label">p</span> Positivus</p>
+            </div>
+          </div>
+
+          <div class="font-box">
+            <div class="credit-box"><a href="#">You can find font here</a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLUMN 2: COLORS -->
+      <div>
+        <div class="section-title">
+          <span class="tag">Colors</span>
+        </div>
+        <div class="colors">
+          <div class="swatch lime">B9FF66</div>
+          <div class="swatch dark">191A23</div>
+          <div class="swatch light">F3F3F3</div>
+        </div>
+      </div>
+
+      <!-- COLUMN 3: ILLUSTRATIONS -->
+      <div>
+        <div class="section-title">
+          <span class="tag">Illustrations</span>
+        </div>
+        <div class="credit-box">
+          <a href="#">Illustrations by Igor Kapustin</a>
+        </div>
+        <br />
+        <div class="credit-box">
+          <a href="#">Image by vectorjuice on Freepik</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
